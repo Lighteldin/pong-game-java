@@ -22,7 +22,6 @@ public class GamePanel extends JPanel {
     public Player player;
     public Enemy enemy;
     public Ball ball;
-    public Wall wall;
 
     //CONSTRUCTOR//
     public GamePanel() {
@@ -42,7 +41,6 @@ public class GamePanel extends JPanel {
         player = new Player(this);
         enemy = new Enemy(this);
         ball = new Ball(this);
-        wall = new Wall(this);
 
         addKeyListener(new Keyboard(player));
         addMouseListener(new Mouse(player));
